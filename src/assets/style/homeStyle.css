@@ -1,0 +1,13 @@
+.hero_section{
+    position: relative;
+    background: url('../../assets//hero/bg.png') no-repeat center center;
+    background-size: cover;
+    background-color: var(--yellow);
+    background-attachment: fixed;
+    padding-top: 117px;
+    padding-bottom: 90px;
+}
+
+.hero_section .price-badge{
+    background: url('../../');
+}
