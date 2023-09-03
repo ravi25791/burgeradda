@@ -7,11 +7,21 @@ const Footer = () => {
   const [isVisible, setIsVisible] = useState(false)
 
   const scrollTop = () =>{
-    window.screenTop({
+    window.scrollTo({
       top:0,
       behavior:"smooth"
     });
   }
+
+  const listenToScroll = ()=>{
+    let heighToHidden =250;
+    const windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    windowScroll > heighToHidden ? setIsVisible(true) : setIsVisible(false);
+  }
+
+  useEffect(()=>{
+    window.addEventListener("scroll", listenToScroll );
+  })
 
   return (
     <>
@@ -115,9 +125,13 @@ const Footer = () => {
     </footer>
 
 {    /* ------------------------------- scroll top ------------------------------- */}
-    <div className='scroll_top' onClick={scrollTop}>
+
+{
+  isVisible && (<div className='scroll_top' onClick={scrollTop}>
       <i className='bi bi-arrow-up'></i>
-    </div>
+    </div>)
+}
+    
 
     </>
   )
