@@ -15,7 +15,7 @@ const Section7 = () => {
                             magna</p>
 
                             <Link to='/' className='btn btn_red px-4 py-2 rounded-0' >
-                                Call : 999-888-7777
+                                Call : +91 83686-55159
                             </Link>
                     </Col>
                 </Row>

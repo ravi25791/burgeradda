@@ -50,7 +50,7 @@ const Footer = () => {
             <div className='text-center'>
               <h5>Order Now</h5>
               <p>Quaerat neque purus ipsum</p>
-              <p><Link to='tel:9998887777' className='calling' >999-888-7777</Link></p>
+              <p><Link to='tel:9998887777' className='calling' >+91 83686-55159</Link></p>
             </div>
           </Col>
 

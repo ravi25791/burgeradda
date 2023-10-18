@@ -1,5 +1,7 @@
 import React from 'react'
 import Banner from '../../component/layout/Banner'
+import Section6 from '../home/Section6'
+import Section7 from '../home/Section7'
 
 const Contact = () => {
     return (
@@ -9,6 +11,7 @@ const Contact = () => {
                 title="contact Us"
                 subTitle="Welcome To Tasty Burger"
             ></Banner>
+            <Section7 />
         </div>
     )
 }
